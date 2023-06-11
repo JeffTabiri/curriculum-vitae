@@ -1,8 +1,9 @@
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0%";
+function openNav(){
+    var x = document.getElementById("myTopnav");
+    if (x.className === "top-nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "top-nav";
+    }
 }
