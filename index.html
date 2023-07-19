@@ -1,92 +1,53 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link href='https://css.gg/css' rel='stylesheet'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curriculum Vitae</title>
-  <script src="js/script.js"> </script>
-
-  <style>
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap');
-
-      .material-symbols-outlined {
-          font-variation-settings:
-                  'FILL' 0,
-                  'wght' 700,
-                  'GRAD' 0,
-                  'opsz' 48
-      }
-  </style>
+  <script src="https://kit.fontawesome.com/2eb74cc0d1.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </head>
-
 <body>
 
+<div class="top-nav sticky" id="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="contact">Contact</a>
+</div>
 
-    <!-- Navigation bar -->
-  <div class="top-nav" id="myTopnav">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-      <a href="javascript:void(0)" class="icon" onclick="openNav()">
-        <span class="material-symbols-sharp">
-          menu
-        </span>
-      </a>
+<section class="sec-01 reveal">
+  <h2>Hi. I'm Jeffrey.</h2>
+  <p>A student pursuing data engineering.</p>
+</section>
+
+<section class="sec-02 reveal">
+  <h2>My expertise mainly revolves around backend.</h2>
+  <p>My skills revolve C#, Java and Python.</p>
+
+  <div class="image-container">
+    <img src="images/cpp.png" alt="">
+    <img src="images/cs.png" alt="">
+    <img src="images/python.png" alt="">
   </div>
 
+</section>
 
-  <section class="header">
-    <header class="main-title">
-      Hi!
-      <br>
-      I'm Jeffrey and an
-      <br>
-      aspiring engineer!
-    </header>
-  </section>
+<section class="sec-03 row">
+  <div class="column">
+    <h2>Check out my work at:</h2>
+    <a href="https://github.com/JeffTabiri"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i> Github</a>
+    <a href="https://www.facebook.com/jeffrey.yawannortabiri"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> Facebook</a>
+    <a href="https://www.linkedin.com/in/jeffrey-yaw-annor-tabiri-782525230/"><i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i> LinkedIn</a>
+  </div>
+  <div class="column">
+    <h2>Contact me on:</h2>
+    <p><i class="fa-regular fa-envelope fa-xl" style="color: #ffffff;"></i> tabirijeffrey@gmail.com</p>
+    <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> 47805098 </p>
+  </div>
+</section>
 
-
-    <div class="container">
-      <img src="https://cdn.pixabay.com/photo/2014/10/29/12/07/robot-507811_1280.jpg" alt="Flowers in Chania" width="460" height="345" class="imgLeft">
-
-      <div class="text">
-        <h2>
-          About
-        </h2>
-        <p>
-          Hi! I'm Jeffrey and a student of Norwegian University of
-          Science and Technology in the field of computer science.
-          <br>
-          <br>
-          I'm highly motivated and dedicated to staying updated with industry methods and technologies.
-          These skills are vital for businesses to adapt and thrive in dynamic times.
-          <br>
-          <br>
-          A dream of mine developing products in the realm of mixed reality, creating an entirely new world
-          that is concealed, but revealed with the use of technology.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <img src="https://cdn.pixabay.com/photo/2014/10/29/12/07/robot-507811_1280.jpg" alt="Flowers in Chania" width="460" height="345" class="imgRight">
-      <div class="text">
-        <h2>
-          Skills
-        </h2>
-        <p>
-          I'm fluent in <span class="blue">C++</span>,<span class="red"> Java</span>, and <span class="green">Python</span>. I'm also familiar with languages like Lua, HTML, JavaScript, and CSS.
-          <br>
-          <br>
-          I have a passion for learning as it enhances my skills and competencies.
-        </p>
-      </div>
-    </div>
 </body>
 </html>

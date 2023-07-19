@@ -1,287 +1,143 @@
-/*
-Google Fonts
-*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans:wght@400;500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
 
-/*
-Body
- */
 body {
     margin: 0;
-    padding: 0;
+    height: 100%;
     width: 100%;
-    background: linear-gradient(#42275a, #103783) no-repeat fixed;
-    overflow-x: hidden;
-    background-size: 150% 159%;
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21) no-repeat;
 }
 
-/*
-Main Title
-*/
-.main-title {
-    font-size: 8vw;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.image-container img {
-
-}
-
-
-/*
-Top Navigate style
- */
 .top-nav {
-    overflow: hidden;
-    width: 100%; /* Full width */
-    text-align: center; /*Position*/
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-
-/*
-Style the links inside the navigation bar
-*/
-.top-nav a {
-    font-family: "Open Sans", sans-serif; /*Font Type*/
-    font-weight: bold; /*Font Weight*/
-    color: #f2f2f2; /*Color of text*/
-    padding: 1rem; /*Space Between elements*/
-    margin: 1rem;
-    text-decoration: none; /*Decoration within text*/
-    font-size: 1.25rem; /*Size of text*/
-}
-
-.top-nav .icon {
-    display: none;
-}
-
-
-/*
-Change the color of links on hover
-*/
-.top-nav a:hover {
-    border-radius: 10rem;
-    background-color: rgba(0,0,0,0.2);
-    color: white;
-    transition: 0.5s;
-}
-
-
-/*
-Create a right-aligned (split) link inside the navigation bar
-*/
-.top-nav a.split {
-    float: right;
-    background-color: #04AA6D;
-    color: white;
-}
-
-
-/*
-Main Container
- */
-.container {
-    border-radius: 1rem;
-    background-color: rgba(0,0,0,0.3);
-    width: 90%;
-    height: auto;
-    gap: 1rem;
-    padding: 1rem;
-    display: table;
-    margin: 3rem auto;
-}
-
-.container img {
-    border-radius: 1rem;
-    width: 50%;
-    height: auto;
-}
-
-.container .imgLeft {
-    float: left;
-    margin-right: 2rem;
-}
-
-.container .imgRight {
-    float: right;
-    margin-left: 2rem;
-}
-
-
-.container h2 {
-    font-size: 2rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    color: #f2f2f2;
-}
-
-.container p {
-    font-family: "PT Sans", "sans-serif";
-    color: white;
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-.text {
-    margin: 1rem;
-    text-overflow: ellipsis;
-}
-
-
-/*
-Text container
- */
-.text-container {
-    max-width: 85%;
-    border-radius: 25px;
-    background-color: rgba(0,0,0,0.3);
-    padding: 1rem;
-    margin: 1rem auto;
-    display: block;
-
-}
-
-
-/*
-Title in text container
- */
-.text-container h2 {
-    font-size: 2rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    color: #f2f2f2;
-    text-align: center;
-}
-
-
-/*
-text in text container
- */
-.text-container p {
-    font-family: "PT Sans", "sans-serif";
-    color: white;
-    font-size: 0.9rem;
-    wrap-option: none;
-}
-
-.text-container .image-container {
-    max-width: 100%;
-    height: auto;
-}
-
-.text-container a {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 50px;
-
-}
-
-footer{
+    background: rgba(0,0,0,0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 100%;
-    position: absolute;
-    background-color: rgba(0,0,0,0.3);
-    color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
-    display: table;
+    overflow: auto;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.top-nav a {
+    font-family: 'Bitter', serif;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 33.33%;
+    padding: 10px;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+}
+
+section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+section p {
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size: 15px;
+    color: white;
+}
+
+.sec-01 {
+    height: 100vh;
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+
+.sec-02 {
+    height: 100vh;
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 50%;
+}
+
+.sec-03 {
+    background: rgba(0,0,0,0.5);
+    display: inline-grid;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.sec-03 a {
+    display: block;
+    font-family: 'Bitter', serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .row {
-    width: 85%;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
 }
 
-.col {
-
-    padding: 10px;
-
+.column {
+    flex: 50%;
 }
-
-
-
-
-
-
-
-@keyframes color {
-    0% {
-        background-position-y: 50%;
-    }
-    50% {
-        background-position-y: 100%;
-    }
-    100% {
-        background-position-y: 50%;
-    }
-}
-
 
 @media screen and (max-width: 600px) {
-    .top-nav a:not(:first-child) {
-        display: none;
-    }
-    .top-nav a.icon {
-        display: grid;
-    }
-
-    .container {
-        width: 80%;
-        margin: 0.5rem;
-    }
-
-    .container img {
-        width: 90%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
+    .row {
         display: block;
-        padding: 0;
     }
-
-    .text {
-        margin: 0;
-        text-overflow: ellipsis;
-    }
-
-
-    .container .imgLeft {
-        float: initial;
-    }
-
-    .container .imgRight {
-        float: none;
-    }
-
-
 }
 
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
 
-    .top-nav.responsive a {
-        float: none;
-        display: block;
-        text-align: center;
-        transition: 0.6s;
-    }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
 }
+
+.image-container img {
+    width: 15%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
